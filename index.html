@@ -1,0 +1,160 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Home — AI Build</title>
+<!-- Dynamic base href so it works locally AND on GitHub Pages (root or /REPO/) -->
+<script>
+(function () {
+  var parts = location.pathname.split('/').filter(Boolean);
+  var isGH = location.hostname.endsWith('.github.io');
+  var base = (isGH && parts.length > 0) ? '/' + parts[0] + '/' : '/';
+  var existing = document.querySelector('base');
+  if (!existing) { existing = document.createElement('base'); document.head.prepend(existing); }
+  existing.href = base;
+})();
+</script>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0b0f14"/>
+<meta name="description" content="Launch your modern, accessible, mobile-first site template in minutes." />
+<meta name="keywords" content="[[ADD, KEYWORDS, HERE]]" />
+<meta name="author" content="[[YOUR NAME OR COMPANY]]" />
+<link rel="canonical" href="[[ADD ABSOLUTE CANONICAL URL]]" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="[[YOUR SITE NAME]]"/>
+<meta property="og:title" content="Home — AI Build"/>
+<meta property="og:description" content="Launch your modern, accessible, mobile-first site template in minutes."/>
+<meta property="og:url" content="[[YOUR CANONICAL URL]]"/>
+<meta property="og:image" content="_assets/img/og-default.jpg"/>
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Home — AI Build"/>
+<meta name="twitter:description" content="Launch your modern, accessible, mobile-first site template in minutes."/>
+<meta name="twitter:image" content="_assets/img/og-default.jpg"/>
+
+<!-- Icons (optional: place your favicon files in _assets/img/) -->
+<link rel="icon" href="_assets/img/favicon.ico" type="image/x-icon"/>
+
+<!-- Styles -->
+<link rel="preload" href="_assets/css/global.css" as="style"/>
+<link rel="stylesheet" href="_assets/css/global.css"/>
+
+<!-- JSON-LD Schema: Organization + WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "[[YOUR SITE NAME]]",
+  "url": "[[YOUR CANONICAL URL]]",
+  "publisher": {
+    "@type": "Organization",
+    "name": "[[YOUR COMPANY NAME]]",
+    "url": "[[YOUR COMPANY URL]]"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "[[YOUR SEARCH URL]]?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+    </head>
+    <body data-page="home" >
+<header class="site-header" role="banner">
+  <div class="container flex between center">
+    <a class="brand" href="index.html" aria-label="Home">
+      <span class="brand-mark" aria-hidden="true">◇</span>
+      <span class="brand-text">[[YOUR BRAND]]</span>
+    </a>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">☰</button>
+    <nav id="siteNav" class="site-nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a data-page="home" href="index.html">Home</a></li>
+        <li><a data-page="about" href="about.html">About</a></li>
+        <li><a data-page="services" href="services.html">Services</a></li>
+        <li><a data-page="portfolio" href="portfolio.html">Portfolio</a></li>
+        <li><a data-page="contact" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <main id="content" class="site-main" role="main">
+<section class="hero" role="region" aria-label="Hero">
+  <!-- Replace the URL below with your full-bleed hero image: put files in _assets/img/ -->
+  <!-- Example: style="--hero:url('_assets/img/hero-home.jpg')" -->
+  <div class="hero-bg" style="--hero:url('_assets/img/placeholder-hero.jpg');"></div>
+  <div class="container hero-content">
+    <h1>[[Page Headline — write a strong promise]]</h1>
+    <p class="lead">[[1–2 sentence value proposition. Keep it concise and benefit-focused.]]</p>
+    <a class="btn" href="services.html">Our Services</a>
+    <a class="btn ghost" href="contact.html">Get in Touch</a>
+  </div>
+</section>
+<section class="section" aria-label="Section 1">
+  <div class="container grid two">
+    <div>
+      <h2>[[Section Title]]</h2>
+      <p>[[Replace this paragraph with your content. Keep paragraphs 2–4 lines for optimal readability.]]</p>
+      <ul class="checklist">
+        <li>[[Short benefit point #1]]</li>
+        <li>[[Short benefit point #2]]</li>
+        <li>[[Short benefit point #3]]</li>
+      </ul>
+    </div>
+    <div class="media-block" style="--bg:url('_assets/img/placeholder-1.jpg')">
+      <!-- Drop a relevant supporting image into _assets/img/ and update the filename -->
+      <span class="media-note">[[Add image: 1600×1000 recommended]]</span>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" aria-label="Section 2">
+  <div class="container grid two">
+    <div class="media-block" style="--bg:url('_assets/img/placeholder-2.jpg')">
+      <span class="media-note">[[Add image: 1600×1000 recommended]]</span>
+    </div>
+    <div>
+      <h2>[[Another Section Title]]</h2>
+      <p>[[Use consistent tone and avoid jargon.]]</p>
+      <a class="btn" href="portfolio.html">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+      </main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container grid footer-grid">
+    <div>
+      <h4>[[Footer Heading]]</h4>
+      <p>[[Add a short mission statement or value prop here.]]</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="list-plain">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:[[you@example.com]]">[[you@example.com]]</a><br/>
+         Phone: [[(555) 123-4567]]<br/>
+         Location: [[Milledgeville, GA 31061]]</p>
+    </div>
+  </div>
+  <div class="container legal">
+    <small>© <span id="year"></span> [[YOUR COMPANY NAME]]. All rights reserved.</small>
+  </div>
+</footer>
+<script defer src="_assets/js/site.js"></script>
+
+    </body>
+    </html>

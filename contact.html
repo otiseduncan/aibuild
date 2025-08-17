@@ -1,0 +1,146 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Contact — AI Build</title>
+<!-- Dynamic base href so it works locally AND on GitHub Pages (root or /REPO/) -->
+<script>
+(function () {
+  var parts = location.pathname.split('/').filter(Boolean);
+  var isGH = location.hostname.endsWith('.github.io');
+  var base = (isGH && parts.length > 0) ? '/' + parts[0] + '/' : '/';
+  var existing = document.querySelector('base');
+  if (!existing) { existing = document.createElement('base'); document.head.prepend(existing); }
+  existing.href = base;
+})();
+</script>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0b0f14"/>
+<meta name="description" content="Give visitors a simple path to reach you and start a conversation." />
+<meta name="keywords" content="[[ADD, KEYWORDS, HERE]]" />
+<meta name="author" content="[[YOUR NAME OR COMPANY]]" />
+<link rel="canonical" href="[[ADD ABSOLUTE CANONICAL URL]]" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="[[YOUR SITE NAME]]"/>
+<meta property="og:title" content="Contact — AI Build"/>
+<meta property="og:description" content="Give visitors a simple path to reach you and start a conversation."/>
+<meta property="og:url" content="[[YOUR CANONICAL URL]]"/>
+<meta property="og:image" content="_assets/img/og-default.jpg"/>
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Contact — AI Build"/>
+<meta name="twitter:description" content="Give visitors a simple path to reach you and start a conversation."/>
+<meta name="twitter:image" content="_assets/img/og-default.jpg"/>
+
+<!-- Icons (optional: place your favicon files in _assets/img/) -->
+<link rel="icon" href="_assets/img/favicon.ico" type="image/x-icon"/>
+
+<!-- Styles -->
+<link rel="preload" href="_assets/css/global.css" as="style"/>
+<link rel="stylesheet" href="_assets/css/global.css"/>
+
+<!-- JSON-LD Schema: Organization + WebSite -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "[[YOUR SITE NAME]]",
+  "url": "[[YOUR CANONICAL URL]]",
+  "publisher": {
+    "@type": "Organization",
+    "name": "[[YOUR COMPANY NAME]]",
+    "url": "[[YOUR COMPANY URL]]"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "[[YOUR SEARCH URL]]?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+    </head>
+    <body data-page="contact" >
+<header class="site-header" role="banner">
+  <div class="container flex between center">
+    <a class="brand" href="index.html" aria-label="Home">
+      <span class="brand-mark" aria-hidden="true">◇</span>
+      <span class="brand-text">[[YOUR BRAND]]</span>
+    </a>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">☰</button>
+    <nav id="siteNav" class="site-nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a data-page="home" href="index.html">Home</a></li>
+        <li><a data-page="about" href="about.html">About</a></li>
+        <li><a data-page="services" href="services.html">Services</a></li>
+        <li><a data-page="portfolio" href="portfolio.html">Portfolio</a></li>
+        <li><a data-page="contact" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <main id="content" class="site-main" role="main">
+<section class="page-header">
+  <div class="container">
+    <h1>Contact</h1>
+    <p class="lead">[[Tell visitors what happens after they submit.]]</p>
+  </div>
+</section>
+<section class="container section">
+  <form class="contact-form" name="contact" method="post" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <label>Full Name
+      <input type="text" name="name" placeholder="Your name" required autocomplete="name"/>
+    </label>
+    <label>Email
+      <input type="email" name="email" placeholder="you@example.com" required autocomplete="email"/>
+    </label>
+    <label>Message
+      <textarea name="message" placeholder="How can we help?" rows="6" required></textarea>
+    </label>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+  <div class="contact-aside">
+    <h3>Other ways to reach us</h3>
+    <p>Email: <a href="mailto:[[you@example.com]]">[[you@example.com]]</a></p>
+    <p>Phone: [[(478) 123-4567]]</p>
+    <p>Location: [[Milledgeville, GA 31061]]</p>
+  </div>
+</section>
+
+      </main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container grid footer-grid">
+    <div>
+      <h4>[[Footer Heading]]</h4>
+      <p>[[Add a short mission statement or value prop here.]]</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="list-plain">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:[[you@example.com]]">[[you@example.com]]</a><br/>
+         Phone: [[(555) 123-4567]]<br/>
+         Location: [[Milledgeville, GA 31061]]</p>
+    </div>
+  </div>
+  <div class="container legal">
+    <small>© <span id="year"></span> [[YOUR COMPANY NAME]]. All rights reserved.</small>
+  </div>
+</footer>
+<script defer src="_assets/js/site.js"></script>
+
+    </body>
+    </html>
