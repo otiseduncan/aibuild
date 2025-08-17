@@ -2,12 +2,11 @@
     <html lang="en">
     <head>
       <title>Services — AI Build</title>
-<!-- Dynamic base href so it works locally AND on GitHub Pages (root or /REPO/) -->
+<!-- Base href fix: local = '/', GitHub Pages project site = '/aibuild/' -->
 <script>
 (function () {
-  var parts = location.pathname.split('/').filter(Boolean);
   var isGH = location.hostname.endsWith('.github.io');
-  var base = (isGH && parts.length > 0) ? '/' + parts[0] + '/' : '/';
+  var base = isGH ? '/aibuild/' : '/';
   var existing = document.querySelector('base');
   if (!existing) { existing = document.createElement('base'); document.head.prepend(existing); }
   existing.href = base;
@@ -128,7 +127,7 @@
     <div>
       <h4>Contact</h4>
       <p>Email: <a href="mailto:[[you@example.com]]">[[you@example.com]]</a><br/>
-         Phone: [[(555) 123-4567]]<br/>
+         Phone: [[(478) 123-4567]]<br/>
          Location: [[Milledgeville, GA 31061]]</p>
     </div>
   </div>

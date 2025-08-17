@@ -1,45 +1,12 @@
-# AI Build — 5‑Page Dark Theme Starter
+# AI Build — Fixed Base for GitHub Pages
 
-A production‑ready, mobile‑first, SEO‑primed template. Dark, neutral palette with a polished feel.
+This build **forces** `base = /aibuild/` whenever the site runs on `*.github.io`. That prevents broken CSS/JS paths on a project site.
 
-## Pages
-- `index.html` (Home)
-- `about.html`
-- `services.html`
-- `portfolio.html`
-- `contact.html`
+### How to use
+1. Copy these files into your repo **root** (keep `_assets` next to your HTML files).
+2. Commit & push.
+3. GitHub Pages → Settings → Pages → Deploy from `main` (root).
+4. Your site will load CSS/JS at `https://otiseduncan.github.io/aibuild/` reliably.
 
-## Features
-- Works locally **and** on GitHub Pages (root or `/REPO/`) via dynamic `<base>` injection
-- Accessible, keyboard‑friendly navigation (mobile hamburger)
-- Full meta tagging (OG + Twitter) and JSON‑LD schema
-- Clear, labeled content slots: look for `[[...]]` comments
-- Placeholder images in `_assets/img/` sized for hero, sections, and OG
-
-## Replace Content (dummy‑proof guide)
-1. **Branding:** In the header, change `[[YOUR BRAND]]`. Update footer company fields.
-2. **Images:** Drop your images into `_assets/img/` and update filenames in inline `style="--hero:url(...)"` and `--bg:url(...)` comments. Recommended sizes are shown next to each slot.
-3. **Text:** Replace every `[[ ... ]]` token with real copy.
-4. **SEO:** In each page `<head>` update:
-   - `<meta name="description">`
-   - `keywords`, `author`, and `canonical`
-   - Open Graph + Twitter `title/description/url/image`
-   - JSON‑LD fields: site name, URLs, company info
-5. **Contact form:** Works with Netlify (`data-netlify="true"`). For other providers, wire up your action endpoint.
-
-## GitHub Pages
-- **Project site:** Settings → Pages → Deploy from `main`, root or `/docs`. This template works in either location.
-- If you move files into `/docs`, move the **entire** folder structure unchanged.
-
-## Local Preview
-Use any static server (Python example):
-```bash
-cd ai-build-template
-python3 -m http.server 3000
-# open http://localhost:3000
-```
-
-## Customize Theme
-Edit `_assets/css/global.css` variables under `:root` for colors, radius, and shadows.
-
+If you later rename the repo, change `/aibuild/` in the inline `<script>` near the top of each HTML file.
 © 2025 Your Company

@@ -1,12 +1,1 @@
-(function(){
-  const navToggle = document.getElementById('navToggle');
-  const siteNav = document.getElementById('siteNav');
-  if(navToggle && siteNav){
-    navToggle.addEventListener('click', function(){
-      const open = siteNav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  }
-  const y = document.getElementById('year');
-  if(y){ y.textContent = new Date().getFullYear(); }
-})();
+(function(){const n=document.getElementById("navToggle"),e=document.getElementById("siteNav");n&&e&&n.addEventListener("click",function(){const t=e.classList.toggle("open");n.setAttribute("aria-expanded",t?"true":"false")});const o=document.getElementById("year");o&&(o.textContent=(new Date).getFullYear())})();
